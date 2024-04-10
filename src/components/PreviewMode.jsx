@@ -31,6 +31,7 @@ import Road from "../assets/img/road.jpg";
 import Sleep from "../assets/img/sleep.jpg";
 import Abandon from "../assets/img/abandon.jpg";
 import Beach2 from "../assets/img/beach2.jpg";
+import { PiArrowUpLeftThin } from "react-icons/pi";
 
 const PreviewMode = (props) => {
   const [img, setImg] = useState(null);
@@ -120,8 +121,11 @@ const PreviewMode = (props) => {
   return (
     img && (
       <div className="w-screen h-screen fixed z-[100] left-0 top-0 bg-black/80">
-        <div className="w-full h-full flex justify-between items-center pl-5 pr-0">
-          <div className="w-[80%] h-[90%] flex flex-col justify-center items-center">
+        <button className="text-8xl absolute top-0 left-0 text-red">
+            <PiArrowUpLeftThin onClick={() => props.hidePreviewMode()} />
+        </button>
+        <div className="w-full h-full flex lg:flex-row flex-col justify-between items-center lg:ml-5 pr-0">
+          <div className="lg:w-[80%] w-[98%] h-[85%] flex flex-col justify-center items-center">
             <img
               src={img}
               alt="Preview"
@@ -130,7 +134,7 @@ const PreviewMode = (props) => {
             />
           </div>
 
-          <div className="ml-5 w-[15%] h-screen relative">
+          <div className="lg:ml-5 lg:w-[15%] h-[15%] lg:h-screen w-screen relative">
             <h1 className="text-2xl text-white font-light absolute top-1 left-2 z-[100]">
               next
             </h1>
