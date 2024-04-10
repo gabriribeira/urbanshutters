@@ -87,7 +87,7 @@ const Navbar = () => {
       <button
         type="button"
         onClick={() => setIsModalOpen(!isModalOpen)}
-        className="text-3xl text-red mt-1 mr-1"
+        className="text-4xl text-red mt-1 mr-1"
       >
         <CiMenuBurger />
       </button>
