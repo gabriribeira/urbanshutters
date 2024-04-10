@@ -32,13 +32,13 @@ import Sleep from "../assets/img/sleep.jpg";
 import Abandon from "../assets/img/abandon.jpg";
 import Beach2 from "../assets/img/beach2.jpg";
 
-const Gallery = () => {
+const Gallery = ({setImg}) => {
   return (
     <div
       id="gallery"
       className="grid xl:grid-cols-5 grid-cols-6 lg:p-20 lg:pt-0 md:p-10 md:pt-0 p-5 pt-0 gap-3 max-w-[1920px] m-auto transition-all duration-500 ease-in-out fade-in"
     >
-      <div className="xl:col-span-2 md:col-span-3 col-span-6 md:h-[600px] h-[300px] grid-flow-col relative">
+      <div onClick={() => setImg(Wheel)} className="xl:col-span-2 md:col-span-3 col-span-6 md:h-[600px] h-[300px] grid-flow-col relative">
         <div className="transition-all duration-[600ms] ease-in-out w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-white font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -54,7 +54,7 @@ const Gallery = () => {
         />
       </div>
       <div className="md:col-span-3 col-span-6 h-[600px] grid grid-rows-2 gap-3 col-span-1">
-        <div className="relative">
+        <div onClick={() => setImg(Cows)} className="relative">
           <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
             <h1 className="text-white font-medium leading-none text-lg uppercase">
               OLYMPUS OM-1
@@ -69,7 +69,7 @@ const Gallery = () => {
             className="w-full object-cover h-full"
           />
         </div>
-        <div className="relative group">
+        <div onClick={() => setImg(Zebra)} className="relative group">
           <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
             <h1 className="text-black font-medium leading-none text-lg uppercase">
               OLYMPUS OM-1
@@ -85,7 +85,7 @@ const Gallery = () => {
           />
         </div>
       </div>
-      <div className="relative group md:col-span-4 col-span-6 md:h-[600px] h-[300px]">
+      <div onClick={() => setImg(Guitar)} className="relative group md:col-span-4 col-span-6 md:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-white font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -100,7 +100,7 @@ const Gallery = () => {
           className="w-full object-cover h-full object-center"
         />
       </div>
-      <div className="relative group xl:col-span-1 md:col-span-2 col-span-3 md:h-[600px] h-[300px]">
+      <div onClick={() => setImg(Gabriel2)} className="relative group xl:col-span-1 md:col-span-2 col-span-3 md:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-white font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -115,7 +115,7 @@ const Gallery = () => {
           className="w-full object-cover h-full object-center"
         />
       </div>
-      <div className="relative group xl:col-span-1 md:col-span-2 col-span-3 lg:h-[600px] h-[300px]">
+      <div onClick={() => setImg(Burro)} className="relative group xl:col-span-1 md:col-span-2 col-span-3 lg:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-black font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -130,7 +130,7 @@ const Gallery = () => {
           className="w-full object-cover h-full object-center"
         />
       </div>
-      <div className="relative group md:col-span-4 col-span-6 lg:h-[600px] h-[300px]">
+      <div onClick={() => setImg(Gabriel)} className="relative group md:col-span-4 col-span-6 lg:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-black font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -145,7 +145,7 @@ const Gallery = () => {
           className="w-full object-cover h-full object-center"
         />
       </div>
-      <div className="relative group xl:col-span-1 col-span-3 md:h-[600px] h-[300px]">
+      <div onClick={() => setImg(Basket)} className="relative group xl:col-span-1 col-span-3 md:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-white font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -160,7 +160,7 @@ const Gallery = () => {
           className="w-full object-cover h-full object-center"
         />
       </div>
-      <div className="relative group xl:col-span-2 col-span-3 md:h-[600px] h-[300px]">
+      <div onClick={() => setImg(Skate)} className="relative group xl:col-span-2 col-span-3 md:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-black font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -175,7 +175,7 @@ const Gallery = () => {
           className="w-full object-cover h-full object-center"
         />
       </div>
-      <div className="relative group xl:col-span-2 col-span-6 md:h-[600px] h-[300px]">
+      <div onClick={() => setImg(Farturas)} className="relative group xl:col-span-2 col-span-6 md:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-white font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -190,7 +190,7 @@ const Gallery = () => {
           className="w-full object-cover h-full object-center"
         />
       </div>
-      <div className="relative group xl:col-span-5 col-span-6 md:h-[600px] h-[300px]">
+      <div onClick={() => setImg(Chair)} className="relative group xl:col-span-5 col-span-6 md:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-white font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -205,7 +205,7 @@ const Gallery = () => {
           className="w-full object-cover h-full xl:object-center object-right"
         />
       </div>
-      <div className="relative group xl:col-span-1 col-span-3 md:h-[600px] h-[300px]">
+      <div onClick={() => setImg(Porto)} className="relative group xl:col-span-1 col-span-3 md:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-white font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -220,7 +220,7 @@ const Gallery = () => {
           className="w-full object-cover h-full object-center"
         />
       </div>
-      <div className="relative group xl:col-span-2 col-span-3 md:h-[600px] h-[300px]">
+      <div onClick={() => setImg(Pescador)} className="relative group xl:col-span-2 col-span-3 md:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-black font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -235,7 +235,7 @@ const Gallery = () => {
           className="w-full object-cover h-full object-center"
         />
       </div>
-      <div className="relative group xl:col-span-2 md:col-span-3 col-span-6 lg:h-[600px] h-[300px]">
+      <div onClick={() => setImg(Tunel)} className="relative group xl:col-span-2 md:col-span-3 col-span-6 lg:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-black font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -250,7 +250,7 @@ const Gallery = () => {
           className="w-full object-cover h-full object-center"
         />
       </div>
-      <div className="relative group xl:col-span-3 md:col-span-3 col-span-6 lg:h-[600px] h-[300px]">
+      <div onClick={() => setImg(GuitarFade)} className="relative group xl:col-span-3 md:col-span-3 col-span-6 lg:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-white font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -265,7 +265,7 @@ const Gallery = () => {
           className="w-full object-cover h-full object-center"
         />
       </div>
-      <div className="relative group md:col-span-2 col-span-3 md:h-[600px] h-[300px]">
+      <div onClick={() => setImg(OldCars)} className="relative group md:col-span-2 col-span-3 md:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-white font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -280,7 +280,7 @@ const Gallery = () => {
           className="w-full object-cover h-full object-center"
         />
       </div>
-      <div className="relative group xl:col-span-2 md:col-span-4 col-span-3 md:h-[600px] h-[300px]">
+      <div onClick={() => setImg(Eletro)} className="relative group xl:col-span-2 md:col-span-4 col-span-3 md:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-white font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -295,7 +295,7 @@ const Gallery = () => {
           className="w-full object-cover h-full object-center"
         />
       </div>
-      <div className="relative group md:col-span-2 col-span-6 md:h-[600px] h-[300px]">
+      <div onClick={() => setImg(Stairs)} className="relative group md:col-span-2 col-span-6 md:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-white font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -310,7 +310,7 @@ const Gallery = () => {
           className="w-full object-cover h-full object-center"
         />
       </div>
-      <div className="relative group xl:col-span-1 md:col-span-2 col-span-3 md:h-[600px] h-[300px]">
+      <div onClick={() => setImg(ManSuit)} className="relative group xl:col-span-1 md:col-span-2 col-span-3 md:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-white font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -325,7 +325,7 @@ const Gallery = () => {
           className="w-full object-cover h-full object-center"
         />
       </div>
-      <div className="relative group xl:col-span-1 md:col-span-2 col-span-3 md:h-[600px] h-[300px]">
+      <div onClick={() => setImg(Gas)} className="relative group xl:col-span-1 md:col-span-2 col-span-3 md:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-white font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -340,7 +340,7 @@ const Gallery = () => {
           className="w-full object-cover h-full object-center"
         />
       </div>
-      <div className="relative group xl:col-span-4 col-span-6 md:h-[600px] h-[300px]">
+      <div onClick={() => setImg(Gabriel3)} className="relative group xl:col-span-4 col-span-6 md:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-black font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -355,7 +355,7 @@ const Gallery = () => {
           className="w-full object-cover h-full xl:object-center object-right"
         />
       </div>
-      <div className="relative group md:col-span-2 col-span-3 md:h-[600px] h-[300px]">
+      <div onClick={() => setImg(SkateFade)} className="relative group md:col-span-2 col-span-3 md:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-white font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -370,7 +370,7 @@ const Gallery = () => {
           className="w-full object-cover h-full object-center"
         />
       </div>
-      <div className="relative group xl:col-span-3 md:col-span-4 col-span-3 md:h-[600px] h-[300px]">
+      <div onClick={() => setImg(Stadium)} className="relative group xl:col-span-3 md:col-span-4 col-span-3 md:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-black font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -385,7 +385,7 @@ const Gallery = () => {
           className="w-full object-cover h-full md:object-center object-right"
         />
       </div>
-      <div className="relative group xl:col-span-2 col-span-3 xl:h-[600px] h-[300px]">
+      <div onClick={() => setImg(Mac)} className="relative group xl:col-span-2 col-span-3 xl:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-white font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -400,7 +400,7 @@ const Gallery = () => {
           className="w-full object-cover h-full object-center"
         />
       </div>
-      <div className="relative group xl:col-span-2 col-span-3 xl:h-[600px] h-[300px]">
+      <div onClick={() => setImg(Beach1)} className="relative group xl:col-span-2 col-span-3 xl:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-black font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -415,7 +415,7 @@ const Gallery = () => {
           className="w-full object-cover h-full object-center"
         />
       </div>
-      <div className="relative group xl:col-span-1 md:col-span-2 col-span-3 md:h-[600px] h-[300px]">
+      <div onClick={() => setImg(Train)} className="relative group xl:col-span-1 md:col-span-2 col-span-3 md:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-white font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -430,7 +430,7 @@ const Gallery = () => {
           className="w-full object-cover h-full object-center"
         />
       </div>
-      <div className="relative group xl:col-span-2 md:col-span-4 col-span-3 md:h-[600px] h-[300px]">
+      <div onClick={() => setImg(Boat)} className="relative group xl:col-span-2 md:col-span-4 col-span-3 md:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-black font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -445,7 +445,7 @@ const Gallery = () => {
           className="w-full object-cover h-full object-left"
         />
       </div>
-      <div className="relative group md:col-span-3 col-span-6 xl:h-[600px] h-[300px]">
+      <div onClick={() => setImg(Boat2)} className="relative group md:col-span-3 col-span-6 xl:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-black font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -460,7 +460,7 @@ const Gallery = () => {
           className="w-full object-cover h-full object-center"
         />
       </div>
-      <div className="relative group md:col-span-3 col-span-6 xl:h-[600px] h-[300px]">
+      <div onClick={() => setImg(Road)} className="relative group md:col-span-3 col-span-6 xl:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-black font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -475,7 +475,7 @@ const Gallery = () => {
           className="w-full object-cover h-full object-center"
         />
       </div>
-      <div className="relative group xl:col-span-2 cmd:ol-span-4 col-span-3 md:h-[600px] h-[300px]">
+      <div onClick={() => setImg(Sleep)} className="relative group xl:col-span-2 cmd:ol-span-4 col-span-3 md:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-black font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -490,7 +490,7 @@ const Gallery = () => {
           className="w-full object-cover h-full object-center"
         />
       </div>
-      <div className="relative group xl:col-span-1 md:col-span-2 col-span-3 md:h-[600px] h-[300px]">
+      <div onClick={() => setImg(Abandon)} className="relative group xl:col-span-1 md:col-span-2 col-span-3 md:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-black font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1
@@ -505,7 +505,7 @@ const Gallery = () => {
           className="w-full object-cover h-full object-center"
         />
       </div>
-      <div className="relative group xl:col-span-4 col-span-6 md:h-[600px] h-[300px]">
+      <div onClick={() => setImg(Beach2)} className="relative group xl:col-span-4 col-span-6 md:h-[600px] h-[300px]">
         <div className="w-full h-full absolute top-0 left-0 flex flex-col items-start p-3">
           <h1 className="text-white font-medium leading-none text-lg uppercase">
             OLYMPUS OM-1

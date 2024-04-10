@@ -31,7 +31,7 @@ import Boat2 from "../assets/img/boat2.jpg";
 import Road from "../assets/img/road.jpg";
 import Sleep from "../assets/img/sleep.jpg";
 
-const Grid = () => {
+const Grid = ({setImg}) => {
   const { isMobile } = useWindowSize();
   return !isMobile ? (
     <div className="relative overflow-hidden md:gap-y-3 gap-y-1 flex flex-col transition-all duration-500 ease-in-out fade-in">
@@ -41,6 +41,7 @@ const Grid = () => {
             src={Gabriel2}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Gabriel2)}
           />
         </div>
         <div className="w-[25vw] h-[25vw] relative flex items-center justify-center flex-shrink-0">
@@ -48,6 +49,7 @@ const Grid = () => {
             src={Wheel}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Wheel)}
           />
         </div>
         <div className="w-[25vw] h-[25vw] relative flex items-center justify-center flex-shrink-0">
@@ -55,6 +57,7 @@ const Grid = () => {
             src={Cows}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Cows)}
           />
         </div>
         <div className="w-[25vw] h-[25vw] relative flex items-center justify-center flex-shrink-0">
@@ -62,6 +65,7 @@ const Grid = () => {
             src={Zebra}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Zebra)}
           />
         </div>
         <div className="w-[25vw] h-[25vw] relative flex items-center justify-center flex-shrink-0">
@@ -69,6 +73,7 @@ const Grid = () => {
             src={Guitar}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Guitar)}
           />
         </div>
       </div>
@@ -79,6 +84,7 @@ const Grid = () => {
             src={Burro}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Burro)}
           />
         </div>
         <div className="w-[25vw] h-[25vw] relative flex items-center justify-center flex-shrink-0">
@@ -86,6 +92,7 @@ const Grid = () => {
             src={Basket}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Basket)}
           />
         </div>
         <div className="w-[25vw] h-[25vw] relative flex items-center justify-center flex-shrink-0">
@@ -93,6 +100,7 @@ const Grid = () => {
             src={Farturas}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Farturas)}
           />
         </div>
         <div className="w-[25vw] h-[25vw] relative flex items-center justify-center flex-shrink-0">
@@ -100,6 +108,7 @@ const Grid = () => {
             src={Skate}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Skate)}
           />
         </div>
         <div className="w-[25vw] h-[25vw] relative flex items-center justify-center flex-shrink-0">
@@ -107,6 +116,7 @@ const Grid = () => {
             src={Chair}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Chair)}
           />
         </div>
       </div>
@@ -117,6 +127,7 @@ const Grid = () => {
             src={Pescador}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Pescador)}
           />
         </div>
         <div className="w-[25vw] h-[25vw] relative flex items-center justify-center flex-shrink-0">
@@ -124,6 +135,7 @@ const Grid = () => {
             src={GuitarFade}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(GuitarFade)}
           />
         </div>
         <div className="w-[25vw] h-[25vw] relative flex items-center justify-center flex-shrink-0">
@@ -131,6 +143,7 @@ const Grid = () => {
             src={Tunel}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Tunel)}
           />
         </div>
         <div className="w-[25vw] h-[25vw] relative flex items-center justify-center flex-shrink-0">
@@ -138,6 +151,7 @@ const Grid = () => {
             src={Porto}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Porto)}
           />
         </div>
         <div className="w-[25vw] h-[25vw] relative flex items-center justify-center flex-shrink-0">
@@ -145,6 +159,7 @@ const Grid = () => {
             src={OldCars}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(OldCars)}
           />
         </div>
       </div>
@@ -155,6 +170,7 @@ const Grid = () => {
             src={Gabriel}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Gabriel)}
           />
         </div>
         <div className="w-[25vw] h-[25vw] relative flex items-center justify-center flex-shrink-0">
@@ -162,6 +178,7 @@ const Grid = () => {
             src={Eletro}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Eletro)}
           />
         </div>
         <div className="w-[25vw] h-[25vw] relative flex items-center justify-center flex-shrink-0">
@@ -169,6 +186,7 @@ const Grid = () => {
             src={Stairs}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Stairs)}
           />
         </div>
         <div className="w-[25vw] h-[25vw] relative flex items-center justify-center flex-shrink-0">
@@ -176,6 +194,7 @@ const Grid = () => {
             src={ManSuit}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(ManSuit)}
           />
         </div>
         <div className="w-[25vw] h-[25vw] relative flex items-center justify-center flex-shrink-0">
@@ -183,6 +202,7 @@ const Grid = () => {
             src={Gas}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Gas)}
           />
         </div>
       </div>
@@ -193,6 +213,7 @@ const Grid = () => {
             src={Gabriel3}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Gabriel3)}
           />
         </div>
         <div className="w-[25vw] h-[25vw] relative flex items-center justify-center flex-shrink-0">
@@ -200,6 +221,7 @@ const Grid = () => {
             src={SkateFade}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(SkateFade)}
           />
         </div>
         <div className="w-[25vw] h-[25vw] relative flex items-center justify-center flex-shrink-0">
@@ -207,6 +229,7 @@ const Grid = () => {
             src={Stadium}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Stadium)}
           />
         </div>
         <div className="w-[25vw] h-[25vw] relative flex items-center justify-center flex-shrink-0">
@@ -214,6 +237,7 @@ const Grid = () => {
             src={Mac}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Mac)}
           />
         </div>
         <div className="w-[25vw] h-[25vw] relative flex items-center justify-center flex-shrink-0">
@@ -221,6 +245,7 @@ const Grid = () => {
             src={Beach1}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Beach1)}
           />
         </div>
       </div>
@@ -231,6 +256,7 @@ const Grid = () => {
             src={Train}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Train)}
           />
         </div>
         <div className="w-[25vw] h-[25vw] relative flex items-center justify-center flex-shrink-0">
@@ -238,6 +264,7 @@ const Grid = () => {
             src={Boat}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Boat)}
           />
         </div>
         <div className="w-[25vw] h-[25vw] relative flex items-center justify-center flex-shrink-0">
@@ -245,6 +272,7 @@ const Grid = () => {
             src={Boat2}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Boat2)}
           />
         </div>
         <div className="w-[25vw] h-[25vw] relative flex items-center justify-center flex-shrink-0">
@@ -252,6 +280,7 @@ const Grid = () => {
             src={Road}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Road)}
           />
         </div>
         <div className="w-[25vw] h-[25vw] relative flex items-center justify-center flex-shrink-0">
@@ -259,6 +288,7 @@ const Grid = () => {
             src={Sleep}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Sleep)}
           />
         </div>
       </div>
@@ -271,6 +301,7 @@ const Grid = () => {
             src={Gabriel2}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Gabriel2)}
           />
         </div>
         <div className="w-[40vw] h-[40vw] relative flex items-center justify-center flex-shrink-0">
@@ -278,6 +309,7 @@ const Grid = () => {
             src={Wheel}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Wheel)}
           />
         </div>
         <div className="w-[40vw] h-[40vw] relative flex items-center justify-center flex-shrink-0">
@@ -285,6 +317,7 @@ const Grid = () => {
             src={Cows}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Cows)}
           />
         </div>
       </div>
@@ -295,6 +328,7 @@ const Grid = () => {
             src={Zebra}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Zebra)}
           />
         </div>
         <div className="w-[40vw] h-[40vw] relative flex items-center justify-center flex-shrink-0">
@@ -302,6 +336,7 @@ const Grid = () => {
             src={Guitar}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Guitar)}
           />
         </div>
         <div className="w-[40vw] h-[40vw] relative flex items-center justify-center flex-shrink-0">
@@ -309,6 +344,7 @@ const Grid = () => {
             src={Burro}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Burro)}
           />
         </div>
       </div>
@@ -319,6 +355,7 @@ const Grid = () => {
             src={Basket}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Basket)}
           />
         </div>
         <div className="w-[40vw] h-[40vw] relative flex items-center justify-center flex-shrink-0">
@@ -326,6 +363,7 @@ const Grid = () => {
             src={Farturas}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Farturas)}
           />
         </div>
         <div className="w-[40vw] h-[40vw] relative flex items-center justify-center flex-shrink-0">
@@ -333,6 +371,7 @@ const Grid = () => {
             src={Skate}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Skate)}
           />
         </div>
       </div>
@@ -343,6 +382,7 @@ const Grid = () => {
             src={Chair}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Chair)}
           />
         </div>
         <div className="w-[40vw] h-[40vw] relative flex items-center justify-center flex-shrink-0 -ml-[5vw]">
@@ -350,6 +390,7 @@ const Grid = () => {
             src={Pescador}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Pescador)}
           />
         </div>
         <div className="w-[40vw] h-[40vw] relative flex items-center justify-center flex-shrink-0">
@@ -357,6 +398,7 @@ const Grid = () => {
             src={GuitarFade}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(GuitarFade)}
           />
         </div>
       </div>
@@ -367,6 +409,7 @@ const Grid = () => {
             src={Tunel}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Tunel)}
           />
         </div>
         <div className="w-[40vw] h-[40vw] relative flex items-center justify-center flex-shrink-0">
@@ -374,6 +417,7 @@ const Grid = () => {
             src={Porto}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Porto)}
           />
         </div>
         <div className="w-[40vw] h-[40vw] relative flex items-center justify-center flex-shrink-0">
@@ -381,6 +425,7 @@ const Grid = () => {
             src={OldCars}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(OldCars)}
           />
         </div>
       </div>
@@ -391,6 +436,7 @@ const Grid = () => {
             src={Gabriel}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Gabriel)}
           />
         </div>
         <div className="w-[40vw] h-[40vw] relative flex items-center justify-center flex-shrink-0">
@@ -398,6 +444,7 @@ const Grid = () => {
             src={Eletro}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Eletro)}
           />
         </div>
         <div className="w-[40vw] h-[40vw] relative flex items-center justify-center flex-shrink-0">
@@ -405,6 +452,7 @@ const Grid = () => {
             src={Stairs}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Stairs)}
           />
         </div>
       </div>
@@ -415,6 +463,7 @@ const Grid = () => {
             src={ManSuit}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(ManSuit)}
           />
         </div>
         <div className="w-[40vw] h-[40vw] relative flex items-center justify-center flex-shrink-0">
@@ -422,6 +471,7 @@ const Grid = () => {
             src={Gas}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Gas)}
           />
         </div>
         <div className="w-[40vw] h-[40vw] relative flex items-center justify-center flex-shrink-0">
@@ -429,6 +479,7 @@ const Grid = () => {
             src={Gabriel3}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Gabriel3)}
           />
         </div>
       </div>
@@ -439,6 +490,7 @@ const Grid = () => {
             src={SkateFade}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(SkateFade)}
           />
         </div>
         <div className="w-[40vw] h-[40vw] relative flex items-center justify-center flex-shrink-0">
@@ -446,6 +498,7 @@ const Grid = () => {
             src={Stadium}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Stadium)}
           />
         </div>
         <div className="w-[40vw] h-[40vw] relative flex items-center justify-center flex-shrink-0">
@@ -453,6 +506,7 @@ const Grid = () => {
             src={Mac}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Mac)}
           />
         </div>
       </div>
@@ -463,6 +517,7 @@ const Grid = () => {
             src={Beach1}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Beach1)}
           />
         </div>
         <div className="w-[40vw] h-[40vw] relative flex items-center justify-center flex-shrink-0">
@@ -470,6 +525,7 @@ const Grid = () => {
             src={Train}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Train)}
           />
         </div>
         <div className="w-[40vw] h-[40vw] relative flex items-center justify-center flex-shrink-0">
@@ -477,6 +533,7 @@ const Grid = () => {
             src={Boat}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Boat)}
           />
         </div>
       </div>
@@ -487,6 +544,7 @@ const Grid = () => {
             src={Boat2}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Boat2)}
           />
         </div>
         <div className="w-[40vw] h-[40vw] relative flex items-center justify-center flex-shrink-0">
@@ -494,6 +552,7 @@ const Grid = () => {
             src={Road}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Road)}
           />
         </div>
         <div className="w-[40vw] h-[40vw] relative flex items-center justify-center flex-shrink-0">
@@ -501,6 +560,7 @@ const Grid = () => {
             src={Sleep}
             alt="Street Photographer"
             className="object-cover object-center h-full w-full absolute top-0 left-0"
+            onClick={() => setImg(Sleep)}
           />
         </div>
       </div>
