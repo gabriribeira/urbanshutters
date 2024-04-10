@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Cover from "../assets/img/feira.jpg";
 import Miguel from "../assets/img/miguel.jpeg";
@@ -7,9 +7,22 @@ import Paulo from "../assets/img/paulo.jpg";
 import { Element } from "react-scroll";
 import Gallery from "../components/Gallery";
 import Grid from "../components/Grid";
+import { CiInstagram } from "react-icons/ci";
+import PreviewMode from "../components/PreviewMode";
 
 const Home = () => {
   const [view, setView] = useState(true);
+  const [img, setImg] = useState(null);
+  const [previewMode, setPreviewMode] = useState(false);
+  const setImgFunction = (img) => {
+    setImg(img);
+  };
+  useEffect(() => {
+    if (img) {
+      setPreviewMode(true);
+    }
+    console.log(img);
+  }, [img]);
   return (
     <div className="bg-white">
       <Navbar />
@@ -58,7 +71,11 @@ const Home = () => {
           i'm feeling lucky
         </button>
       </div>
-      {view ? <Gallery /> : <Grid />}
+      {view ? (
+        <Gallery setImg={setImgFunction} />
+      ) : (
+        <Grid setImg={setImgFunction} />
+      )}
       <Element name="contacts">
         <div className="pb-10 px-20 flex lg:flex-row flex-col-reverse justify-between lg:items-end items-center">
           <p className="text-red uppercase text-lg col-span-1 text-center">
@@ -78,6 +95,21 @@ const Home = () => {
           </div>
         </div>
       </Element>
+      <a
+        href="https://www.instagram.com/urbanshutters.ph/"
+        target="_blank"
+        rel="noreferrer"
+        className="text-4xl text-black fixed lg:bottom-2 lg:right-2 right-1 bottom-1"
+      >
+        <CiInstagram />
+      </a>
+      {previewMode && (
+        <PreviewMode
+          img={img}
+          hidePreviewMode={() => setPreviewMode(false)}
+          setImg={setImgFunction}
+        />
+      )}
     </div>
   );
 };
